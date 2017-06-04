@@ -13,13 +13,11 @@ public:
 	void shuffle();
 	Card drawCard();
 	void loadDeck();
-
-	std::vector<Card> m_deck;
-
+    std::vector<Card>& getCards();
 
 private:
 	static vili::DataParser deckFile;
 
-	//std::vector<Card> m_deck;
+    std::vector<Card> m_deck;
 	std::string m_name;
 };

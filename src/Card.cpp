@@ -20,6 +20,7 @@ Card::Card(unsigned int id)
 	m_type = convertStringToType(cardObject.at<vili::BaseAttribute>("type"));
 	for (vili::BaseAttribute* family : cardObject.at<vili::ListAttribute>("families"))
 		m_families.push_back(convertStringToFamily(*family));
+    m_sprite.setPosition(sf::Vector2f(m_id * 50, 0));
 }
 
 void Card::draw(sf::RenderTarget& target, sf::RenderStates states) const

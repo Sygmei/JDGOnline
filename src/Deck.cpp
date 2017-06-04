@@ -18,6 +18,7 @@ void Deck::Init()
 Deck::Deck(std::string name)
 {
 	m_name = name;
+    m_deck.reserve(40);
 }
 
 void Deck::shuffle()
@@ -37,7 +38,12 @@ void Deck::loadDeck()
 {
 	vili::ComplexAttribute& deckObject = deckFile.at("Decks", m_name);
 	for (vili::BaseAttribute* card : deckObject.at<vili::ListAttribute>("cards"))
-		m_deck.emplace_back(*card);
+        m_deck.emplace_back(*card);
+}
+
+std::vector<Card>& Deck::getCards()
+{
+    return m_deck;
 }
 
 std::vector<std::string> listFileInDir(const std::string& path)

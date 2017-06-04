@@ -7,7 +7,6 @@ int main(int argc, char** argv)
 	Deck::Init();
 	sf::RenderWindow window(sf::VideoMode(800, 600, 32), "JDGO");
 
-	//Card carte = Card(2);
 	Deck deck = Deck("firstdeck");
 	deck.loadDeck();
 	deck.shuffle();
@@ -24,17 +23,8 @@ int main(int argc, char** argv)
 			}
 		}
 
-		window.clear();
-		sf::Transform t1;
-		t1.translate(100, 0);
-		sf::Transform t2;
-		t2.translate(200, 0);
-		sf::Transform t3;
-		t3.translate(300, 0);
-
-		window.draw(deck.m_deck.at(0), t1);
-		window.draw(deck.m_deck.at(1), t2);
-		window.draw(deck.m_deck.at(2), t3);
+        for (Card& card : deck.getCards())
+		    window.draw(card);
 		
 		window.display();
 	}

@@ -53,8 +53,8 @@ public:
 private:
 	static vili::DataParser cardFile;
 
-	sf::Texture m_texture;
 	sf::Sprite m_sprite;
+    sf::Texture m_texture;
 	unsigned int m_id;
 	unsigned int m_atk;
 	unsigned int m_def;
