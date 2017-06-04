@@ -1,0 +1,25 @@
+Cards:
+    0001:
+        name:"Joueur du grenier"
+        quote:"Une carte originale"
+        description:"Saviez-vous que cette chemise a été achetée dans un magasin et que du coup cette carte n'a aucune effet spécial ?"
+        atk:6
+        def:6
+        type:"Invocation"
+        families:["Humain"]
+    0002:
+        name:"Seb du grenier"
+        quote:"En métal ça aurait eu la classe !"
+        description:"Sa voix change parfois. Mais ça n'apporte aucun effet spécifique."
+        atk:6
+        def:6
+        type:"Invocation"
+        families:["Humain"]
+    0003:
+        name:"Patate"
+        quote:"Pata-patate ?"
+        description:"Si elle est ciblée par une attaque adverse, cette carte peut se protéger automatiquement derrière une autre carte INVOCATION sur le terrain du joueur si celle-ci a une plus grande DEF."
+        atk:4
+        def:4
+        type:"Invocation"
+        families:["Japon"]

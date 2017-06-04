@@ -1,23 +1,42 @@
 #include "main.hpp"
 
+
 int main(int argc, char** argv)
 {
-	std::cout << argv[0] << std::endl;
-	int a;
-	std::ifstream useFile;
-	useFile.open("cards/listcard.txt");
-	std::string currentLine;
-	if (useFile.is_open())
+	Card::Init();
+	Deck::Init();
+	sf::RenderWindow window(sf::VideoMode(800, 600, 32), "JDGO");
+
+	//Card carte = Card(2);
+	Deck deck = Deck("firstdeck");
+	deck.loadDeck();
+	deck.shuffle();
+
+	while(window.isOpen())
 	{
-		while (getline(useFile, currentLine))
+		sf::Event event;
+
+		while(window.pollEvent(event))
 		{
-			std::cout << currentLine << std::endl;
+			if (event.type == sf::Event::Closed)
+			{
+				window.close();
+			}
 		}
+
+		window.clear();
+		sf::Transform t1;
+		t1.translate(100, 0);
+		sf::Transform t2;
+		t2.translate(200, 0);
+		sf::Transform t3;
+		t3.translate(300, 0);
+
+		window.draw(deck.m_deck.at(0), t1);
+		window.draw(deck.m_deck.at(1), t2);
+		window.draw(deck.m_deck.at(2), t3);
+		
+		window.display();
 	}
-	else
-	{
-		std::cout << "A PAS TROUVEEEE" << std::endl;
-	}
-	std::cin >> a;
     return 0;
 }

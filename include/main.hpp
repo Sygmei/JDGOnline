@@ -3,7 +3,5 @@
 #include <iostream>
 #include <fstream>
 
-int fonctionCool()
-{
-    return 5;
-}
+#include "Card.hpp"
+#include "Deck.hpp"

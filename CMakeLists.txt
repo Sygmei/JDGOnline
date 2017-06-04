@@ -6,6 +6,7 @@ project(JDGO)
 set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${CMAKE_SOURCE_DIR}/extlibs/find")
 
 add_subdirectory(extlibs/build/TGUI)
+add_subdirectory(extlibs/build/vili)
 
 file(GLOB PG_JDGO include/*.hpp)
 file(GLOB HD_JDGO src/*.cpp)
@@ -26,6 +27,7 @@ include_directories(${SFML_INCLUDE_DIR})
 add_executable(JDGO ${PG_JDGO} ${HD_JDGO})
 
 target_link_libraries(JDGO tgui)
+target_link_libraries(JDGO vili)
 
 if(SFML_FOUND)
   target_link_libraries(JDGO ${EXECUTABLE_NAME} ${SFML_LIBRARIES})
