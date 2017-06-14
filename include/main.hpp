@@ -4,4 +4,5 @@
 #include <fstream>
 
 #include "Card.hpp"
-#include "Deck.hpp"
+#include "Functions.hpp"
+#include "Player.hpp"

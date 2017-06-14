@@ -1,4 +1,5 @@
 ﻿#include "Card.hpp"
+#include <string>
 
 vili::DataParser Card::cardFile;
 void Card::Init()
@@ -6,21 +7,23 @@ void Card::Init()
 	cardFile.parseFile("cards/cards.vili");
 }
 
-Card::Card(unsigned int id)
+vili::ComplexAttribute& Card::getCard(unsigned int id)
 {
-	vili::ComplexAttribute& cardObject = cardFile.at("Cards", convertIdToViliPath(id));
-	m_texture.loadFromFile("cards/" + convertIdToViliPath(id) + ".png");
+	return cardFile.at("Cards", convertIdToViliPath(id));
+}
+
+Card::Card(vili::ComplexAttribute& cardObject)
+{
+	m_texture.loadFromFile("cards/" + cardObject.getID() + ".png");
 	m_sprite.setTexture(m_texture);
-	m_id = id;
-	m_atk = cardObject.at<vili::BaseAttribute>("atk");
-	m_def = cardObject.at<vili::BaseAttribute>("def");
-	m_name = cardObject.at<vili::BaseAttribute>("name");
-	m_quote = cardObject.at<vili::BaseAttribute>("quote");
-	m_description = cardObject.at<vili::BaseAttribute>("description");
+	m_id = stoi(cardObject.getID());
+	m_name = cardObject.at<vili::BaseAttribute>("name").get<std::string>();
+	m_quote = cardObject.at<vili::BaseAttribute>("quote").get<std::string>();
+	m_description = cardObject.at<vili::BaseAttribute>("description").get<std::string>();
 	m_type = convertStringToType(cardObject.at<vili::BaseAttribute>("type"));
-	for (vili::BaseAttribute* family : cardObject.at<vili::ListAttribute>("families"))
-		m_families.push_back(convertStringToFamily(*family));
-    m_sprite.setPosition(sf::Vector2f(m_id * 50, 0));
+	m_collector = cardObject.at<vili::BaseAttribute>("collector");
+    m_sprite.setPosition(sf::Vector2f(m_id * 50, 0)); //A suppr
+	
 }
 
 void Card::draw(sf::RenderTarget& target, sf::RenderStates states) const
@@ -31,16 +34,6 @@ void Card::draw(sf::RenderTarget& target, sf::RenderStates states) const
 const unsigned& Card::getId() const
 {
 	return m_id;
-}
-
-const unsigned& Card::getAtk() const
-{
-	return m_atk;
-}
-
-const unsigned& Card::getDef() const
-{
-	return m_def;
 }
 
 const std::string& Card::getName() const
@@ -63,9 +56,9 @@ const CardTypes::CardType& Card::getType() const
 	return m_type;
 }
 
-const std::vector<CardFamilies::CardFamily>& Card::getFamilies() const
+const bool& Card::getCollector() const
 {
-	return m_families;
+	return m_collector;
 }
 
 std::string convertIdToViliPath(unsigned int id)
@@ -104,3 +97,5 @@ CardTypes::CardType convertStringToType(const std::string & type)
 		return CardTypes::Contre;
 	return CardTypes::Terrain;
 }
+
+Card::~Card() {}

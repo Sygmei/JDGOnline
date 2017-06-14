@@ -7,6 +7,7 @@ Cards:
         def:6
         type:"Invocation"
         families:["Humain"]
+        collector:False
     0002:
         name:"Seb du grenier"
         quote:"En métal ça aurait eu la classe !"
@@ -15,6 +16,7 @@ Cards:
         def:6
         type:"Invocation"
         families:["Humain"]
+        collector:False
     0003:
         name:"Patate"
         quote:"Pata-patate ?"
@@ -23,3 +25,496 @@ Cards:
         def:4
         type:"Invocation"
         families:["Japon"]
+        collector:False
+    0004:
+        name:"Jean-Louis la chaussette"
+        quote:"L'esprit de noël, qui réchauffe les coeurs et les pieds."
+        description:"Cette carte ne peut pas être attaquée ni détruite par une autre carte INVOCATION."
+        atk:2
+        def:2
+        type:"Invocation"
+        families:["Incarnation"]
+        collector:False
+    0005:
+        name:"Enfant de Juron"
+        quote:"Fils de p*** !!"
+        description:"Cette carte ne peut être invoquée directement sur le terrain. Invocable par invocation spéciale, ou en sacrifiant la carte " Joueur du grenier " sur le TERRAIN " Forêt des elfes sylvains "."
+        atk:10
+        def:8
+        type:"Invocation"
+        families:["RPG"]
+        collector:True
+    0006:
+        name:"Vieux sage"
+        quote:"Pour méditer avec lui, appelez le 0835837512 numéro payant 1.30€/min"
+        description:"Cette carte ne peut être invoquée directement sur le terrain. Invocable par invocation spéciale, ou en sacrifiant la carte " Seb du grenier " sur le TERRAIN " Forêt des elfes sylvains "."
+        atk:8
+        def:10
+        type:"Invocation"
+        families:["RPG"]
+        collector:True
+    0007:
+        name:"Le Pyro-Barbare"
+        quote:"C'est comme l'enfant de juron mais en moins bien."
+        description:"Bisous Bob. Et pour la peine ta carte ne fait rien de spécial !"
+        atk:6
+        def:4
+        type:"Invocation"
+        families:["RPG"]
+        collector:False
+    0008:
+        name:"L'elfette"
+        quote:"C'est pour les quotas."
+        description:"Cette carte peut se soustraire de ses étoiles d'ATQ et de DEF pour les additionner sur les mêmes statistiques d'autres cartes INVOCATION de type " RPG " sur le terrain. Les étoiles distribuées sonta nnulées si cette carte est détruite."
+        atk:4
+        def:4
+        type:"Invocation"
+        families:["RPG"]
+        collector:False
+    0009:
+        name:"Le hobbit"
+        quote:"Ne l'écoutez pas quand il vous dit qu'il est humain."
+        description:"Invoquer cette carte sur votre terrain vous permet d'ajouter la carte " Forêt des elfes sylvains " à votre main depuis votre pioche."
+        atk:4
+        def:4
+        type:"Invocation"
+        families:["RPG"]
+        collector:False
+    0010:
+        name:"Sylvain, fils de Sylvain, roi des elfes"
+        quote:"Où est l'office de tourisme ?"
+        description:"Le costume valait 12 €. C'est sûrement pour ça que cette carte ne mérite aucun effet bonus."
+        atk:4
+        def:6
+        type:"Invocation"
+        families:["RPG"]
+        collector:False
+    0011:
+        name:"Karim"
+        quote:"Humanoïde le plus drôle de la terre."
+        description:"Non sérieusement, allez voir Chroma."
+        atk:5
+        def:5
+        type:"Invocation"
+        families:["Humain"]
+        collector:False
+    0012:
+        name:"Papy grenier"
+        quote:"Et la description de la carte ça sera pour une prochaine fois."
+        description:"Cette carte ne peut rester qu'un seul tour sur le terrain avant d'aller directement à la poubelle jaune. Le tour fini, vous pouvez ajouter à votre main une carte " La Mort " depuis votre pioche."
+        atk:8
+        def:4
+        type:"Invocation"
+        families:["Humain"]
+        collector:False
+    0013:
+        name:"La Mort"
+        quote:"MDR"
+        description:"Cette carte ne peut-être invoquée et subsister sur votre terrain que si se trouvent au moins 10 cartes INVOCATION dans votre poubelle jaune. Invoquer cette carte vous permet le tour de son invocation d'envoyer une carte INVOCATION du terrain de votre adversaire à la poubelle jaune."
+        atk:5
+        def:8
+        type:"Invocation"
+        families:["Incarnation"]
+        collector:False
+    0014:
+        name:"Canardman"
+        quote:"Pas le héros dont on a besoin mais le héros qu'on mérite."
+        description:"Cette carte ne peut être invoquée directement sur le terrain. Invocable par invocation spéciale, ou en sacrifiant sur votre terrain une carte " Joueur du grenier " équipé d'une carte " Canarang "."
+        atk:10
+        def:8
+        type:"Invocation"
+        families:["Comics"]
+        collector:True
+    0015:
+        name:"L'aigle de la nuit"
+        quote:"Facilement confondu avec le pygargue."
+        description:"C'est juste un mec en costume de motard ! Tu me croyais quand même pas que tu allais avoir un effet bonus pour ça, non ?"
+        atk:6
+        def:4
+        type:"Invocation"
+        families:["Comics"]
+        collector:False
+    0016:
+        name:"Le pycargue"
+        quote:"Facilement confondu avec l'aigle de la nuit."
+        description:"Aucun effet ! Question de droits pour la photo. Sinon cette carte aurait valu au moins 5 étoiles d'ATQ !"
+        atk:4
+        def:6
+        type:"Invocation"
+        families:["Comics"]
+        collector:False
+    0017:
+        name:"Jean-Michel Bruitages"
+        quote:"Artiste japonais authentique."
+        description:"Les bonus sont en japonais aussi."
+        atk:6
+        def:5
+        type:"Invocation"
+        families:["Humain"]
+        collector:False
+    0018:
+        name:"Patron d'Infogrames"
+        quote:"Vendeur de cauchemars depuis 1983."
+        description:"Cette carte ne peut être invoquée directement sur le terrain. Invocable par invocation spéciale, ou en sacrifiant sur votre terrain une carte " Seb du grenier " équipé d'une carte " Merde tournoyante en plastique bleu "."
+        atk:9
+        def:9
+        type:"Invocation"
+        families:["Monstre"]
+        collector:True
+    0019:
+        name:"Propriétaire de Fistiland"
+        quote:"Vive l'argent !"
+        description:"Cette carte gagne 1 étoile en ATQ et en DEF pour chaque carte INVOCATION de type " Fistiland " présente sur le terrain du joueur."
+        atk:4
+        def:4
+        type:"Invocation"
+        families:["Fistilant"]
+        collector:False
+    0020:
+        name:"Jean-Cule"
+        quote:"Vous voulez de la graisse sur votre sel ?"
+        description:"Si j'osais je mettrais un malus, mais non, ça ne sera rien du tout."
+        atk:4
+        def:6
+        type:"Invocation"
+        families:["Fistiland"]
+        collector:False
+    0021:
+        name:"Fisti"
+        quote:"Un poing c'est tout !"
+        description:"Ne me tente pas de te dire pourquoi cette carte n'a pas d'effet bonus."
+        atk:5
+        def:5
+        type:"Invocation"
+        families:["Fistiland"]
+        collector:False
+    0022:
+        name:"Dictateur sympa"
+        quote:"Pas vraiment pire que nos hommes politiques actuels."
+        description:"Cette carte ne peut être invoquée directement sur le terrain. Invocable par invocation spéciale, ou en sacrifiant sur votre terrain une autre carte INVOCATION d'au moins 3 étoiles d'ATQ ou de DEF. Cette carte vous permet d'aller chercher et de poser immédiatement une carte TERRAIN de votre pioche sur votre terrain."
+        atk:8
+        def:6
+        type:"Invocation"
+        families:["Monstre"]
+        collector:False
+    0023:
+        name:"Kechua"
+        quote:"Anana wa oni wananou osheshtach."
+        description:"J'ai découpé un morceau de la nappe de ma mère pour faire ce costume. Donc, évidemment que cette carte ne fait rien de spécial."
+        atk:4
+        def:6
+        type:"Invocation"
+        families:["Humain"]
+        collector:False
+    0024:
+        name:"Cap'tain Iglou"
+        quote:"Ne faites pas sauter son sursis."
+        description:"Le bonus, c'est 150 calories. Ça ne va pas t'aider à gagner cette partie cela dit."
+        atk:6
+        def:4
+        type:"Invocation"
+        families:["Humain"]
+        collector:False
+    0025:
+        name:"Archibald von Grenier"
+        quote:"Dispense des cours de fitness les mercredis et samedis."
+        description:"Si on avait mis un effet bonus à un mec déguisé en colon occidental en Afrique, ça aurait pu finir au tribunal donc : pas d'effet du tout."
+        atk:4
+        def:4
+        type:"Invocation"
+        families:["Incarnation"]
+        collector:False
+    0026:
+        name:"Alpha V de Gelganech"
+        quote:"De la planète Gelganox."
+        description:"Cette carte ne peut être invoquée directement sur le terrain. Invocable par invocation spéciale, ou en sacrifiant sur votre terrain la carte " Archibald von Grenier " sur le terrain " Zozan Kebab ". Invoquer cette carte vous permet d'ajouter à votre main une autre carte de type " Spatial " depuis votre pioche."
+        atk:8
+        def:6
+        type:"Invocation"
+        families:["Spatial"]
+        collector:False
+    0027:
+        name:"Amiral Oméga 3"
+        quote:"Pour une bonne digestion."
+        description:"Le bonus pour toi, c'est un bon transit intestinal ! Félicitations !"
+        atk:6
+        def:4
+        type:"Invocation"
+        families:["Spatial"]
+        collector:False
+    0028:
+        name:"Frangipanus"
+        quote:"Bientôt un spin-off centré sur ce personnage."
+        description:"Invoquer cette carte vous permet d'ajouter à votre main la carte " Zozan Kebab " depuis votre pioche."
+        atk:2
+        def:2
+        type:"Invocation"
+        families:["Spatial"]
+        collector:False
+    0029:
+        name:"Granolax"
+        quote:"Maudit shi-nwa."
+        description:"Si elle est ciblée par une attaque adverse, cette carte peut se protéger automatiquement derrière la carte " Starlight Unicorn " si celle-ci est sur le terrain du joueur."
+        atk:4
+        def:4
+        type:"Invocation"
+        families:["Spatial"]
+        collector:False
+    0030:
+        name:"Mecha-Granolax"
+        quote:"Se déplace à bord de la N.E.M. (Nano-Electro-Machine)."
+        description:"Cette carte ne peut être invoquée directement sur le terrain. Invocable uniquement en sacrifiant sur votre terrain une carte " Granolax " qui a été ramenée de la poubelle jaune. Cette carte est insensible aux cartes EFFET jouées par l'adversaire."
+        atk:10
+        def:8
+        type:"Invocation"
+        families:["Spatial"]
+        collector:True
+    0031:
+        name:"Starlight Unicorn"
+        quote:"Pony pony pony pony !!"
+        description:"Cette carte ne peut être invoquée et subsister sur le terrain que si s'y trouve une carte " Granolax " ou " Mecha-Granolax ". Tant que cette carte reste sur le terrain, vous pouvez chaque tour faire sauter la phase d'attaque d'une carte INVOCATION du terrain de votre adversaire."
+        atk:7
+        def:8
+        type:"Invocation"
+        families:["Japon","Incarnation"]
+        collector:False
+    0032:
+        name:"La petite fille"
+        quote:"Putain putain putain putain !!"
+        description:"Cette carte ne peut être invoquée et subsister sur le terrain que si s'y trouve une carte " Joueur du grenier ". Tant que cette carte reste sur le terrain, les cartes INVOCATION adverses ne peuvent pas attaquer d'autre carte que celle-ci."
+        atk:8
+        def:7
+        type:"Invocation"
+        families:["Japon","Incarnation"]
+        collector:False
+    0033:
+        name:"Fantôme de japonaise"
+        quote:"Attendez, c'est pas Benzaie ?"
+        description:"Et si tu arrives à imiter sa voix en posant cette carte, eh bien super ! Mais tu ne gagnes rien de particulier..."
+        atk:6
+        def:4
+        type:"Invocation"
+        families:["Japon","Incarnation"]
+        collector:False
+    0034:
+        name:"Cliché raciste"
+        quote:"En plus elle est même pas japonaise."
+        description:"Invoquer cette carte sur votre terrain vous permet d'y invoquer également la carte " Tentacules " depuis votre pioche."
+        atk:2
+        def:2
+        type:"Invocation"
+        families:["Japon"]
+        collector:False
+    0035:
+        name:"Tentacules"
+        quote:"Parce que forcément ça devait arriver."
+        description:"Cette carte ne peut être invoquée et subsister sur votre terrain sur si s'y trouve au moins une autre carte de type " Japon ". Tant que cette carte reste sur le terrain, les cartes INVOCATION adverses ne peuvent pas attaquer d'autre carte que celle-ci."
+        atk:5
+        def:8
+        type:"Invocation"
+        families:["Japon"]
+        collector:False
+    0036:
+        name:"Plume de phénix"
+        quote:"Ok mec ! Ça va ! J'suis plus mort !"
+        description:"Permet au joueur de ramener par invocation spéciale une carte INVOCATION de sa poubelle jaune à son terrain."
+        type:"Effet"
+        collector:False
+    0037:
+        name:"Squalala !"
+        quote:"Nous sommes partis !"
+        description:"Envoie une carte INVOCATION du terrain de votre adversaire directement à la poubelle jaune."
+        type:"Effet"
+        collector:False
+    0038:
+        name:"Maniabilité pourrie"
+        quote:"Des fois c'est aussi la faute de la manette."
+        description:"Fait sauter la phase d'attaque des cartes INVOCATION adverses lors du prochain tour de votre adversaire."
+        type:"Effet"
+        collector:False
+    0039:
+        name:"Feuille"
+        quote:"Attention, une feuille !"
+        description:"Défaussez-vous d'une carte de votre main pour détruire n'importe quelle carte sur votre terrain ou celui de votre adversaire."
+        type:"Effet"
+        collector:True
+    0040:
+        name:"Le mot de passe"
+        quote:"Moi aussi je perds la boule !"
+        description:"Allez chercher n'importe quelle carte dans votre pioche ou votre poubelle jaune pour l'ajouter à votre main."
+        type:"Effet"
+        collector:True
+    0041:
+        name:"Sceaux magiques"
+        quote:"On s'en sert pour ouvrir la porte... Enfin je crois."
+        description:"Utilisable si vous n'avez aucune carte INVOCATION sur votre terrain. Cette carte agit comme un bouclier qui annule un total de 3 attaques des cartes INVOCATION de votre adversaire."
+        type:"Effet"
+        collector:True
+    0042:
+        name:"Quart de smiley sur la main"
+        quote:"S'accompagne en général d'un discours sur l'amitié."
+        description:"Les étoiles de DEF des cartes INVOCATION de votre adversaire sont divisées par 2 pour ce tour."
+        type:"Effet"
+        collector:False
+    0043:
+        name:"Petite portion de "Riz""
+        quote:"Plot twist : C'était pas du riz."
+        description:"Vos cartes INVOCATION peuvent attaquer 2 fois chacune pendant ce tour."
+        type:"Effet"
+        collector:False
+    0044:
+        name:"Musique de Mega Drive"
+        quote:"Mes oreilles viennent de vomir je crois."
+        description:"Votre adversaire perd 2,5 étoiles de vie pour chaque carte INVOCATION présente sur son terrain."
+        type:"Effet"
+        collector:False
+    0045:
+        name:"Demi-pizza"
+        quote:"... with pepperoni."
+        description:"Sacrifiez une INVOCATION de votre terrain ayant au moins 3 étoiles d'ATQ ou de DEF pour récupérer 15 étoiles de vie."
+        type:"Effet"
+        collector:False
+    0046:
+        name:"Youtube money"
+        quote:"Muchos dineros !"
+        description:"Transférez une INVOCATION du terrain de votre adversaire à votre propre terrain, ce qui vous permet d'en prendre le contrôle pendant ce tour."
+        type:"Effet"
+        collector:False
+    0047:
+        name:"Repop"
+        quote:"Parceque le malheur ne s'arrête jamais complétement."
+        description:"Si votre adversaire envoie une de vos cartes INVOCATION à la poubelle jaune, vous pouvez la réinvoquer par invocation spéciale immédiatement sur le terrain."
+        type:"Contre"
+        collector:False
+    0048:
+        name:"Ecran de fin nul"
+        quote:"Bravo... je crois."
+        description:"S'utilise dans le cas où une INVOCATION adverse attaque et détruit une de celles de votre terrain. L'INVOCATION victorieuse ne pourra plus lancer d'attaque et ce jusqu'à la fin du duel."
+        type:"Contre"
+        collector:False
+    0049:
+        name:"Le cancer"
+        quote:"Les blagues de cancéreux sont toujours les plus drôles."
+        description:"Si votre adversaire fait une invocation spéciale ou normale d'une INVOCATION sur le terrain, cette carte est envoyée directement à la poubelle jaune."
+        type:"Contre"
+        collector:False
+    0050:
+        name:"Hitbox buguée"
+        quote:"C'est vraiment magnifique !"
+        description:"Si une INVOCATION adverse attaque une de vos cartes INVOCATION sur le terrain ou directement vos étoiles de vie, son attaque est annulée et le montant de ses étoiles d'ATQ au moment de l'attaque est soustraite directement des étoiles de vie de votre adversaire."
+        type:"Contre"
+        collector:False
+    0051:
+        name:"Sauvegarde effacée"
+        quote:"C'est génial ! J'ai hâte de tout recommencer !"
+        description:"Si votre adversaire inflige des dégâts à vos étoiles de vie, ces dégâts sont annulés et toutes les cartes qu'il a joué ce tour vont directement à la poubelle jaune."
+        type:"Contre"
+        collector:True
+    0052:
+        name:"Claquement de doigts"
+        quote:"Silence femme."
+        description:"Annule une carte CONTRE et l'envoie à la poubelle jaune."
+        type:"Contre"
+        collector:True
+    0053:
+        name:"Revers du droit"
+        quote:"Apparemment ça parle de tennis."
+        description:"Si une INVOCATION adverse attaque une de vos cartes INVOCATION sur le terrain ou directement vos étoiles de vie, la puissance de son attaque est multipliée par 2 et lui est renvoyée."
+        type:"Contre"
+        collector:False
+    0054:
+        name:"Mauvaise traduction"
+        quote:"Rayon magique !"
+        description:"Si votre adversaire joue une carte EFFET, vous pouvez l'annuler et l'envoyer à la poubelle jaune."
+        type:"Contre"
+        collector:False
+    0055:
+        name:"Assist' !"
+        quote:"New challenger !"
+        description:"Vous permet d'échanger par invocation spéciale une carte INVOCATION de votre terrain contre une autre carte INVOCATION de votre main."
+        type:"Contre"
+        collector:False
+    0056:
+        name:"Danse de la victoire"
+        quote:"TINTINTINTIN TIN TIN TINTINLIIIIIN !"
+        description:"S'utilise dans le cas où une INVOCATION adverse attaque et détruit une de celles de votre terrain. L'INVOCATION victorieuse lance après destruction de votre carte une attaque sur chacune des autres cartes INVOCATION présentes sur son propre terrain."
+        type:"Contre"
+        collector:False
+    0057:
+        name:"Le salami"
+        quote:"Votre seul ami."
+        description:"Ajoute à une INVOCATION 2 étoiles de plus en ATQ."
+        mod_atk:"+2"
+        mod_def:"0"
+        type:"Equipement"
+        collector:False
+    0058:
+        name:"Merde magique en plastique rose"
+        quote:"Pour vous les filles !"
+        description:"Ajoute à une INVOCATION 1 étoiles de plus en ATQ et en DEF."
+        mod_atk:"+1"
+        mod_def:"+1"
+        type:"Equipement"
+        collector:False
+    0059:
+        name:"Merde tournoyante en plastique bleu"
+        quote:"Pour vous les mecs !"
+        description:"Multiplie par 2 l'ATQ et divise par 2 la DEF de l'INVOCATION équipée."
+        mod_atk:"*2"
+        mod_def:"/2"
+        type:"Equipement"
+        collector:False
+    0059:
+        name:"Merde tournoyante en plastique bleu"
+        quote:"Pour vous les mecs !"
+        description:"Multiplie par 2 l'ATQ et divise par 2 la DEF de l'INVOCATION équipée."
+        mod_atk:"*2"
+        mod_def:"/2"
+        type:"Equipement"
+        collector:False
+    0060:
+        name:"Petite culotte"
+        quote:"Taille 12 ans, évidemment."
+        description:"Équiper cette carte à une INVOCATION permet de lui déséquiper et envoyer à la pouvelle jaune une carte EQUIPEMENT déjà équipée."
+        mod_atk:"0"
+        mod_def:"0"
+        type:"Equipement"
+        collector:False
+    0061:
+        name:"Canarang"
+        quote:"Le gadget le plus discret au monde."
+        description:"Ajout 1 étoile d'ATQ et soustrait une étoile de DEF à l'INVOCATION équipée, et lui permet d'attaquer directement les étoiles de vie de l'adversaire."
+        mod_atk:"+1"
+        mod_def:"-1"
+        type:"Equipement"
+        collector:False
+    0062:
+        name:"Le grenier"
+        quote:"En réalité c'est le salon mais on s'en fout."
+        description:"Permet au joueur ayant cette carte sur son terrain de piocher 2 cartes par tour."
+        type:"Terrain"
+        collector:True
+    0063:
+        name:"Le Japon"
+        quote:"Weirdest place on earth."
+        description:"Toutes les cartes INVOCATION de type " Japon " sur ce terrain obtiennent 1 étoile d'ATQ supplémentaire."
+        type:"Terrain"
+        collector:False
+    0064:
+        name:"Zozan Kebab"
+        quote:"Meilleur keba de l'hémisphère nord."
+        description:"Toutes les cartes INVOCATION de type " Spatial " sur ce terrain obtiennent 1 étoiles de DEF supplémentaires."
+        type:"Terrain"
+        collector:False
+    0065:
+        name:"Forêt des elfes Sylvains"
+        quote:"Les arbres aussi s'appellent Sylvain"
+        description:"Toutes les cartes INVOCATION de type " RPG " sur ce terrain obtiennent 0,5 étoiles d'ATQ et de DEF supplémentaires."
+        type:"Terrain"
+        collector:False
+    0066:
+        name:"Fistiland"
+        quote:"Au fond du fun !"
+        description:"Permet au joueur ayant cette carte sur son terrain de sauter sa phase de pioche aller chercher une carte INVOCATION de type " Fistiland " dans sa pioche ou sa poubelle jaune pour l'ajouter à sa main."
+        type:"Terrain"
+        collector:False

@@ -2,6 +2,7 @@
 #include <SFML/Graphics.hpp>
 #include <vili/Vili.hpp>
 
+
 namespace CardFamilies
 {
 	enum CardFamily
@@ -37,30 +38,29 @@ class Card : public sf::Drawable
 {
 public:
 	static void Init();
+	static vili::ComplexAttribute&  Card::getCard(unsigned int id);
 
-	Card(unsigned int id);
+	Card(vili::ComplexAttribute& cardObject);
 	void draw(sf::RenderTarget& target, sf::RenderStates states) const override;
 
 	const unsigned& getId() const;
-	const unsigned& getAtk() const;
-	const unsigned& getDef() const;
 	const std::string& getName() const;
 	const std::string& getQuote() const;
 	const std::string& getDescription() const;
 	const CardTypes::CardType& getType() const;
-	const std::vector<CardFamilies::CardFamily>& getFamilies() const;
+	const bool& getCollector() const;
 
+	virtual ~Card() = 0;
+	
 private:
 	static vili::DataParser cardFile;
 
 	sf::Sprite m_sprite;
     sf::Texture m_texture;
 	unsigned int m_id;
-	unsigned int m_atk;
-	unsigned int m_def;
 	std::string m_name;
 	std::string m_quote;
 	std::string m_description;
+	bool m_collector;
 	CardTypes::CardType m_type;
-	std::vector<CardFamilies::CardFamily> m_families;
 };
